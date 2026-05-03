@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Realtime Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section id="login" class="card">
+    <h1>Realtime Chat</h1>
+    <form id="loginForm">
+      <input id="username" placeholder="Your name" maxlength="20" required />
+      <input id="room" placeholder="Room (e.g. general)" maxlength="30" list="roomOptions" />
+      <datalist id="roomOptions"></datalist>
+      <button type="submit">Join</button>
+      <p id="loginError" class="error"></p>
+    </form>
+    <div id="activeRooms"></div>
+  </section>
+
+  <section id="chat" class="hidden">
+    <aside>
+      <h2 id="roomTitle"></h2>
+      <h3>Online</h3>
+      <ul id="users"></ul>
+      <button id="leaveBtn" class="secondary">Leave room</button>
+    </aside>
+    <main>
+      <ul id="messages"></ul>
+      <div id="typing"></div>
+      <form id="msgForm">
+        <input id="msgInput" placeholder="Type a message..." autocomplete="off" maxlength="500" />
+        <button type="submit">Send</button>
+      </form>
+      <p id="msgError" class="error"></p>
+    </main>
+  </section>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>

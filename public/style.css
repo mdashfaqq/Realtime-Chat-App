@@ -1,0 +1,49 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0; font-family: system-ui, sans-serif; background: #0f172a; color: #e2e8f0;
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+}
+.hidden { display: none !important; }
+.error { color: #f87171; min-height: 1.2em; font-size: 14px; }
+button {
+  background: #6366f1; color: #fff; border: 0; border-radius: 8px;
+  padding: 10px 16px; cursor: pointer; font-weight: 600;
+}
+button.secondary { background: #334155; }
+input {
+  padding: 10px 12px; border-radius: 8px; border: 1px solid #334155;
+  background: #1e293b; color: inherit; font-size: 15px;
+}
+.card {
+  background: #1e293b; padding: 32px; border-radius: 16px; width: min(380px, 92vw);
+}
+.card form { display: flex; flex-direction: column; gap: 10px; }
+#activeRooms { font-size: 13px; color: #94a3b8; margin-top: 8px; }
+
+#chat {
+  display: grid; grid-template-columns: 220px 1fr; width: min(960px, 96vw); height: 85vh;
+  background: #1e293b; border-radius: 16px; overflow: hidden;
+}
+aside { background: #111827; padding: 20px; display: flex; flex-direction: column; }
+aside ul { list-style: none; padding: 0; flex: 1; }
+aside li { padding: 4px 0; }
+aside li::before { content: "● "; color: #22c55e; }
+main { display: flex; flex-direction: column; padding: 16px; min-height: 0; }
+#messages { list-style: none; padding: 0; margin: 0; flex: 1; overflow-y: auto; }
+#messages li {
+  background: #334155; padding: 8px 12px; border-radius: 10px; margin: 6px 0;
+  max-width: 75%; word-wrap: break-word;
+}
+#messages li.mine { background: #4f46e5; margin-left: auto; }
+#messages li.system {
+  background: none; color: #94a3b8; font-size: 13px; text-align: center; max-width: 100%;
+}
+.meta { display: block; font-size: 11px; opacity: 0.7; margin-bottom: 2px; }
+#typing { font-size: 13px; color: #94a3b8; height: 20px; }
+#msgForm { display: flex; gap: 8px; }
+#msgForm input { flex: 1; }
+
+@media (max-width: 640px) {
+  #chat { grid-template-columns: 1fr; height: 92vh; }
+  aside { display: none; }
+}
