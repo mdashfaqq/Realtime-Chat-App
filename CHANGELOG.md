@@ -12,3 +12,5 @@ All notable changes to this project are documented here.
 
 - **2026-06-10**: test: expand test coverage for error responses and status codes
 
+- **2026-06-12**: test: add unit test assertions for edge cases and input validation
+
