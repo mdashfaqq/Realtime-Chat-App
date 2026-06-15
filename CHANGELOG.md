@@ -16,3 +16,5 @@ All notable changes to this project are documented here.
 
 - **2026-06-12**: docs: clarify setup steps and environment configuration in README
 
+- **2026-06-15**: style: format code according to style conventions and lint rules
+
