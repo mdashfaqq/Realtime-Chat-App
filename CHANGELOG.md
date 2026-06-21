@@ -20,3 +20,5 @@ All notable changes to this project are documented here.
 
 - **2026-06-21**: feat: initial project setup and core architecture scaffolding
 
+- **2026-06-21**: feat: add structured logging for debugging and runtime diagnostics
+
