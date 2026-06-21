@@ -18,3 +18,5 @@ All notable changes to this project are documented here.
 
 - **2026-06-15**: style: format code according to style conventions and lint rules
 
+- **2026-06-21**: feat: initial project setup and core architecture scaffolding
+
