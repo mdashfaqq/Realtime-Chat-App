@@ -24,3 +24,5 @@ All notable changes to this project are documented here.
 
 - **2026-06-24**: fix: handle null values and prevent potential boundary errors
 
+- **2026-06-24**: ci: configure workflow check steps and code validation triggers
+
