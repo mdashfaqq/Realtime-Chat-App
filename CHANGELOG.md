@@ -22,3 +22,5 @@ All notable changes to this project are documented here.
 
 - **2026-06-21**: feat: add structured logging for debugging and runtime diagnostics
 
+- **2026-06-24**: fix: handle null values and prevent potential boundary errors
+
