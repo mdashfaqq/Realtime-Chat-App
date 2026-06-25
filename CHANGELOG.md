@@ -26,3 +26,5 @@ All notable changes to this project are documented here.
 
 - **2026-06-24**: ci: configure workflow check steps and code validation triggers
 
+- **2026-06-25**: docs: document API schema, sample payloads, and parameters
+
