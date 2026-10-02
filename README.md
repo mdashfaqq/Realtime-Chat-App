@@ -1,6 +1,10 @@
-# Realtime Chat App
+# PulseChat — Realtime Chat App
 
-A multi-room, real-time chat application built with **Node.js, Express and Socket.IO**. Users pick a name, join or create a room, and chat live with typing indicators, an online-users list and message history.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-brightgreen?style=for-the-badge&logo=render)](https://realtime-chat-app-sxj8.onrender.com)
+
+**Live App**: [https://realtime-chat-app-sxj8.onrender.com](https://realtime-chat-app-sxj8.onrender.com)
+
+A multi-room, real-time glassmorphism chat application built with **Node.js, Express, and Socket.IO**. Users pick a name, join or create a room, and chat live with typing indicators, an online-users list, and message history.
 
 ## Features
 
